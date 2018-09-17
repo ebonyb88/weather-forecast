@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-1">
+    <div class="well">
+      <h1>Look Up Your Local Forecast</h1>
+      <p>What's the weather like in your city?</p>
+      <div>
+        <%= form_tag index_path do %>
+        <%= text_field_tag :zipcode, nil, placeholder: "zipcode", class: "form-control" %><br/>
+        <%= submit_tag "Check Weather", class: "btn btn-primary" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
